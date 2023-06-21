@@ -1,0 +1,2035 @@
+@font-face {
+    font-family: Spongebob;
+    src: url(fonts/spongeboy-font/SpongeboyRegular-gx2n6.otf);
+}
+
+@font-face {
+    font-family: Chalk;
+    src: url(fonts/CallieChalkFont-Regular.otf);
+}
+
+html, body {
+    height: 100%;
+}
+
+.popupImg {
+    background-image: url("photos/bb.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#question1 {
+    margin-right: 5px;
+}
+
+
+
+
+
+.nextButton {
+    position: absolute;
+    top: 58%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+    align-self: flex-end;
+    background-color: #fff000;
+    border-radius: 12px;
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 15px 10px 10px;
+    width: 18%;
+    box-sizing: border-box;
+    border: 0;
+    font-family: Spongebob;
+}
+
+.nextButton:hover {
+    transform: scale(1.2);
+}
+
+.submit {
+    align-self: flex-end;
+    margin-right: 5%;
+    background-color: #fff000;
+    border-radius: 12px;
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 15px;
+    text-align: center;
+    width: 25%;
+    box-sizing: border-box;
+    border: 0;
+    font-family: Spongebob;
+}
+
+.submit:hover {
+    transform: scale(1.2);
+}
+
+.buttonDiv {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.body {
+    background-image: url("photos/bb.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bodyQuiz {
+    background-image: url('photos/future.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.textPopupWindow {
+    margin-top: 30px;
+    padding: 10px;
+}
+
+
+.enterButton {
+    background-color: chartreuse;
+    width: 60%;
+    height: 20%;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Spongebob;
+    font-size: large;
+    color: coral;
+    padding: 5px;
+    margin-bottom: 60px;
+}
+
+.enterButton:hover {
+    transform: scale(1.1);
+}
+
+.enterButton:focus {
+    background-color: rgb(78, 156, 0);
+}
+
+li {
+    list-style-type: none
+}
+
+
+@media only screen and (min-width:200px) {
+    @keyframes bubble {
+        0% {margin-top: 200%; margin-left:5%;}
+        15% {margin-top: 110%; margin-left: 15%;}
+        30% {margin-top: 70%; margin-left: 5%;}
+        45% {margin-top: 40%; margin-left: 15%;}
+        60% {margin-top: 20%; margin-left: 5%;}
+        75% {margin-top: 15%; margin-left: 10%;}
+        100% {margin-top: 15%; margin-left: 10%;}
+    }
+    .popup{
+        background-image: url('photos/character_montage_opacity0_4.jpeg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        row-gap: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content:space-evenly;
+        position: absolute;
+        height: 25%;
+        width: 75%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        font-size:medium;
+        border-radius: 50%;
+        font-family: Spongebob;
+        color:darkviolet;
+        animation: bubble 8s ease-in-out 0s 1 normal forwards;
+    }
+    @keyframes fadeIn {
+        0% {opacity: 0.0;}
+        25% {opacity: 0.25;}
+        50% {opacity: 0.50;}
+        75% {opacity: 0.75;}
+        100% {opacity: 1.0;}
+    }
+    .quizScreen {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1%;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        border-radius: 50px;
+        top: 5%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 65%;
+        width: 100%;
+        background-image: url('photos/quizScreen2.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        animation: fadeIn 3s ease-in 0s 1 normal forwards;
+    }
+    
+    .title {
+        padding-top: 7%;
+        margin-left: 7%;
+        font-family: Spongebob;
+        color:blue;
+        font-size:10px;
+        rotate: 12deg;
+    }
+    .subtitle {
+        margin: 0;
+        padding-left: 20%;
+        font-family: Spongebob;
+        color:red;
+        font-size: 10px;
+        rotate: 12deg;
+        width: 42%;
+    }
+    .quizForm {
+        margin-right: 5%;
+        font-family: Spongebob;
+        font-size: 10px;
+        color: green;
+        rotate: 20deg;
+    }
+}
+
+@media only screen and (min-width:300px) {
+    @keyframes bubble {
+        0% {margin-top: 200%; margin-left:5%;}
+        15% {margin-top: 110%; margin-left: 15%;}
+        30% {margin-top: 70%; margin-left: 5%;}
+        45% {margin-top: 40%; margin-left: 15%;}
+        60% {margin-top: 20%; margin-left: 5%;}
+        75% {margin-top: 15%; margin-left: 10%;}
+        100% {margin-top: 15%; margin-left: 10%;}
+    }
+    .popup{
+        background-image: url('photos/character_montage_opacity0_4.jpeg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        row-gap: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content:space-evenly;
+        position: absolute;
+        height: 30%;
+        width: 75%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        font-size:medium;
+        border-radius: 50%;
+        font-family: Spongebob;
+        color:darkviolet;
+        animation: bubble 8s ease-in-out 0s 1 normal forwards;
+    }
+    @keyframes fadeIn {
+        0% {opacity: 0.0;}
+        25% {opacity: 0.25;}
+        50% {opacity: 0.50;}
+        75% {opacity: 0.75;}
+        100% {opacity: 1.0;}
+    }
+    .quizScreen {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        border-radius: 50px;
+        top: 5%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 65%;
+        width: 100%;
+        background-image: url('photos/quizScreen2.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        animation: fadeIn 3s ease-in 0s 1 normal forwards;
+    }
+    
+    .title {
+        padding-top: 4px;
+        margin-left: 7%;
+        font-family: Spongebob;
+        color:blue;
+        font-size:10px;
+        rotate: 12deg;
+    }
+    .subtitle {
+        margin: 0;
+        padding-left: 18%;
+        font-family: Spongebob;
+        color:red;
+        font-size: 10px;
+        rotate: 12deg;
+        width: 42%;
+    }
+    .quizForm {
+        margin-right: 5%;
+        font-family: Spongebob;
+        font-size: 10px;
+        color: green;
+        rotate: 20deg;
+    }
+    .chalkboard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        border-radius: 50px;
+        top: 5%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 65%;
+        width: 100%;
+        background-image: url('photos/chalkboard.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        animation: fadeIn 3s ease-in 0s 1 normal forwards;
+    }
+    .chalk {
+        margin: 0;
+        font-family: Chalk;
+        color: white;
+        font-size: small;
+        font-weight: bolder;
+        margin-bottom: 35%;
+    }
+}
+
+
+@media only screen and (min-width:400px) {
+    @keyframes bubble {
+        0% {margin-top: 200%; margin-left:5%;}
+        15% {margin-top: 110%; margin-left: 25%;}
+        30% {margin-top: 70%; margin-left: 5%;}
+        45% {margin-top: 40%; margin-left: 25%;}
+        60% {margin-top: 20%; margin-left: 10%;}
+        75% {margin-top: 15%; margin-left: 17%;}
+        100% {margin-top: 15%; margin-left: 17%;}
+    }
+    .popup{
+        background-image: url('photos/character_montage_opacity0_4.jpeg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        row-gap: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content:space-evenly;
+        position: absolute;
+        height: 30%;
+        width: 60%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        font-size:medium;
+        border-radius: 50%;
+        font-family: Spongebob;
+        color:darkviolet;
+        animation: bubble 8s ease-in-out 0s 1 normal forwards;
+    }
+    @keyframes fadeIn {
+        0% {opacity: 0.0;}
+        25% {opacity: 0.25;}
+        50% {opacity: 0.50;}
+        75% {opacity: 0.75;}
+        100% {opacity: 1.0;}
+    }
+    .quizScreen {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        border-radius: 50px;
+        top: 5%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 65%;
+        width: 95%;
+        background-image: url('photos/quizScreen2.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        animation: fadeIn 3s ease-in 0s 1 normal forwards;
+    }
+    
+    .title {
+        padding-top: 2%;
+        margin-left: 7%;
+        font-family: Spongebob;
+        color:blue;
+        font-size:smaller;
+        rotate: 12deg;
+    }
+    .subtitle {
+        margin: 0;
+        padding-left: 12%;
+        font-family: Spongebob;
+        color:red;
+        font-size: 12px;
+        rotate: 12deg;
+        width: 40%;
+    }
+    .quizForm {
+        padding-top: 2%;
+        margin-right: 5%;
+        font-family: Spongebob;
+        font-size: 12px;
+        color: green;
+        rotate: 20deg;
+    }
+    .chalkboard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        border-radius: 50px;
+        top: 5%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 65%;
+        width: 90%;
+        background-image: url('photos/chalkboard.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        animation: fadeIn 3s ease-in 0s 1 normal forwards;
+    }
+    .chalk {
+        font-family: Chalk;
+        color: white;
+        font-size: small;
+        font-weight: bolder;
+        margin-bottom: 30%;
+    }
+}
+
+
+@media only screen and (min-width:500px) {
+    @keyframes bubble {
+        0% {margin-top: 160%; margin-left:5%;}
+        15% {margin-top: 90%; margin-left: 30%;}
+        30% {margin-top: 50%; margin-left: 5%;}
+        45% {margin-top: 30%; margin-left: 30%;}
+        60% {margin-top: 15%; margin-left: 10%;}
+        75% {margin-top: 13%; margin-left: 22%;}
+        100% {margin-top: 13%; margin-left: 22%;}
+    }
+    .popup{
+        background-image: url('photos/character_montage_opacity0_4.jpeg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        row-gap: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content:space-evenly;
+        position: absolute;
+        height: 30%;
+        width: 53%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        font-size: large;
+        border-radius: 50%;
+        font-family: Spongebob;
+        color:darkviolet;
+        animation: bubble 8s ease-in-out 0s 1 normal forwards;
+    }
+    @keyframes fadeIn {
+        0% {opacity: 0.0;}
+        25% {opacity: 0.25;}
+        50% {opacity: 0.50;}
+        75% {opacity: 0.75;}
+        100% {opacity: 1.0;}
+    }
+    .quizScreen {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        border-radius: 50px;
+        top: 5%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 65%;
+        width: 88%;
+        background-image: url('photos/quizScreen2.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        animation: fadeIn 3s ease-in 0s 1 normal forwards;
+    }
+    
+    .title {
+        padding-top: 5%;
+        margin-left: 7%;
+        font-family: Spongebob;
+        color:blue;
+        font-size:medium;
+        rotate: 12deg;
+    }
+    .subtitle {
+        padding-left: 12%;
+        font-family: Spongebob;
+        color:red;
+        font-size:small;
+        rotate: 12deg;
+        width: 40%;
+    }
+    .quizForm {
+        padding-top: 2%;
+        margin-right: 5%;
+        font-family: Spongebob;
+        font-size: small;
+        color: green;
+        rotate: 20deg;
+    }
+    .chalkboard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        border-radius: 50px;
+        top: 5%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 65%;
+        width: 90%;
+        background-image: url('photos/chalkboard.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        animation: fadeIn 3s ease-in 0s 1 normal forwards;
+    }
+    .chalk {
+        font-family: Chalk;
+        color: white;
+        font-size: medium;
+        font-weight: bolder;
+        margin-bottom: 30%;
+    }
+}
+
+@media only screen and (min-width:600px) {
+    @keyframes bubble {
+        0% {margin-top: 110%; margin-left:5%;}
+        15% {margin-top: 90%; margin-left: 40%;}
+        30% {margin-top: 60%; margin-left: 5%;}
+        45% {margin-top: 40%; margin-left: 40%;}
+        60% {margin-top: 15%; margin-left: 10%;}
+        75% {margin-top: 13%; margin-left: 25%;}
+        100% {margin-top: 13%; margin-left: 25%;}
+    }
+    .popup{
+        background-image: url('photos/character_montage_opacity0_4.jpeg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        row-gap: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content:space-evenly;
+        position: absolute;
+        height: 33%;
+        width: 46%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        font-size: large;
+        border-radius: 50%;
+        font-family: Spongebob;
+        color:darkviolet;
+        animation: bubble 8s ease-in-out 0s 1 normal forwards;
+    }
+    @keyframes fadeIn {
+        0% {opacity: 0.0;}
+        25% {opacity: 0.25;}
+        50% {opacity: 0.50;}
+        75% {opacity: 0.75;}
+        100% {opacity: 1.0;}
+    }
+    .quizScreen {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        border-radius: 50px;
+        top: 5%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 65%;
+        width: 75%;
+        background-image: url('photos/quizScreen2.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        animation: fadeIn 3s ease-in 0s 1 normal forwards;
+    }
+    
+    .title {
+        padding-top: 5%;
+        margin-left: 7%;
+        font-family: Spongebob;
+        color:blue;
+        font-size:medium;
+        rotate: 12deg;
+    }
+    .subtitle {
+        padding-left: 12%;
+        font-family: Spongebob;
+        color:red;
+        font-size:small;
+        rotate: 12deg;
+        width: 40%;
+    }
+    .quizForm {
+        margin-right: 5%;
+        font-family: Spongebob;
+        font-size: small;
+        color: green;
+        rotate: 20deg;
+    }
+    .chalkboard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        border-radius: 50px;
+        top: 5%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 65%;
+        width: 90%;
+        background-image: url('photos/chalkboard.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        animation: fadeIn 3s ease-in 0s 1 normal forwards;
+    }
+    .chalk {
+        font-family: Chalk;
+        color: white;
+        font-size: medium;
+        font-weight: bolder;
+        margin-bottom: 30%;
+    }
+}
+
+
+@media only screen and (min-width:700px) {
+    @keyframes bubble {
+        0% {margin-top: 110%; margin-left:10%;}
+        15% {margin-top: 90%; margin-left: 45%;}
+        30% {margin-top: 60%; margin-left: 10%;}
+        45% {margin-top: 40%; margin-left: 45%;}
+        60% {margin-top: 15%; margin-left: 10%;}
+        75% {margin-top: 13%; margin-left: 28%;}
+        100% {margin-top: 13%; margin-left: 28%;}
+    }
+    .popup{
+        background-image: url('photos/character_montage_opacity0_4.jpeg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        row-gap: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content:space-evenly;
+        position: absolute;
+        height: 33%;
+        width: 42%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        font-size: large;
+        border-radius: 50%;
+        font-family: Spongebob;
+        color:darkviolet;
+        animation: bubble 8s ease-in-out 0s 1 normal forwards;
+    }
+    @keyframes fadeIn {
+        0% {opacity: 0.0;}
+        25% {opacity: 0.25;}
+        50% {opacity: 0.50;}
+        75% {opacity: 0.75;}
+        100% {opacity: 1.0;}
+    }
+    .quizScreen {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        border-radius: 50px;
+        top: 5%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 60%;
+        width: 70%;
+        background-image: url('photos/quizScreen2.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        animation: fadeIn 3s ease-in 0s 1 normal forwards;
+    }
+    
+    .title {
+        padding-top: 5%;
+        margin-left: 7%;
+        font-family: Spongebob;
+        color:blue;
+        font-size:large;
+        rotate: 12deg;
+    }
+    .subtitle {
+        padding-left: 12%;
+        font-family: Spongebob;
+        color:red;
+        font-size:small;
+        rotate: 12deg;
+        width: 40%;
+    }
+    .quizForm {
+        margin-right: 5%;
+        font-family: Spongebob;
+        color: green;
+        rotate: 20deg;
+    }
+    .chalkboard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        border-radius: 50px;
+        top: 5%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 65%;
+        width: 90%;
+        background-image: url('photos/chalkboard.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        animation: fadeIn 3s ease-in 0s 1 normal forwards;
+    }
+    .chalk {
+        font-family: Chalk;
+        color: white;
+        font-size: large;
+        font-weight: bolder;
+        margin-bottom: 30%;
+    }
+}
+
+
+@media only screen and (min-width:800px) {
+    @keyframes bubble {
+        0% {margin-top: 110%; margin-left:10%;}
+        15% {margin-top: 90%; margin-left: 50%;}
+        30% {margin-top: 60%; margin-left: 10%;}
+        45% {margin-top: 40%; margin-left: 50%;}
+        60% {margin-top: 15%; margin-left: 10%;}
+        75% {margin-top: 10%; margin-left: 32%;}
+        100% {margin-top: 10%; margin-left: 32%;}
+    }
+    .popup{
+        background-image: url('photos/character_montage_opacity0_4.jpeg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        row-gap: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content:space-evenly;
+        position: absolute;
+        height: 30%;
+        width: 36%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        font-size: large;
+        border-radius: 50%;
+        font-family: Spongebob;
+        color:darkviolet;
+        animation: bubble 8s ease-in-out 0s 1 normal forwards;
+    }
+    @keyframes fadeIn {
+        0% {opacity: 0.0;}
+        25% {opacity: 0.25;}
+        50% {opacity: 0.50;}
+        75% {opacity: 0.75;}
+        100% {opacity: 1.0;}
+    }
+    .quizScreen {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        border-radius: 50px;
+        top: 5%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 60%;
+        width: 65%;
+        background-image: url('photos/quizScreen2.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        animation: fadeIn 3s ease-in 0s 1 normal forwards;
+    }
+    
+    .title {
+        padding-top: 5%;
+        margin-left: 7%;
+        font-family: Spongebob;
+        color:blue;
+        font-size:large;
+        rotate: 12deg;
+    }
+    .subtitle {
+        padding-left: 12%;
+        font-family: Spongebob;
+        color:red;
+        font-size: medium;
+        rotate: 12deg;
+        width: 40%;
+    }
+    .quizForm {
+        margin-right: 5%;
+        font-family: Spongebob;
+        color: green;
+        rotate: 20deg;
+    }
+    .chalkboard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        border-radius: 50px;
+        top: 5%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 65%;
+        width: 85%;
+        background-image: url('photos/chalkboard.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        animation: fadeIn 3s ease-in 0s 1 normal forwards;
+    }
+    .chalk {
+        font-family: Chalk;
+        color: white;
+        font-size: large;
+        font-weight:900;
+        margin-bottom: 30%;
+    }
+}
+
+
+@media only screen and (min-width:900px) {
+    @keyframes bubble {
+        0% {margin-top: 100%; margin-left:10%;}
+        15% {margin-top: 80%; margin-left: 60%;}
+        30% {margin-top: 60%; margin-left: 10%;}
+        45% {margin-top: 40%; margin-left: 60%;}
+        60% {margin-top: 15%; margin-left: 10%;}
+        75% {margin-top: 10%; margin-left: 35%;}
+        100% {margin-top: 10%; margin-left: 35%;}
+    }
+    .popup{
+        background-image: url('photos/character_montage_opacity0_4.jpeg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        row-gap: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content:space-evenly;
+        position: absolute;
+        height: 35%;
+        width: 32%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        font-size: large;
+        border-radius: 50%;
+        font-family: Spongebob;
+        color:darkviolet;
+        animation: bubble 8s ease-in-out 0s 1 normal forwards;
+    }
+    @keyframes fadeIn {
+        0% {opacity: 0.0;}
+        25% {opacity: 0.25;}
+        50% {opacity: 0.50;}
+        75% {opacity: 0.75;}
+        100% {opacity: 1.0;}
+    }
+    .quizScreen {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        border-radius: 50px;
+        top: 5%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 60%;
+        width: 60%;
+        background-image: url('photos/quizScreen2.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        animation: fadeIn 3s ease-in 0s 1 normal forwards;
+    }
+    
+    .title {
+        padding-top: 5%;
+        margin-left: 7%;
+        font-family: Spongebob;
+        color:blue;
+        font-size:large;
+        rotate: 12deg;
+    }
+    .subtitle {
+        padding-left: 12%;
+        font-family: Spongebob;
+        color:red;
+        font-size: medium;
+        rotate: 12deg;
+        width: 40%;
+    }
+    .quizForm {
+        margin-right: 5%;
+        font-family: Spongebob;
+        color: green;
+        rotate: 20deg;
+    }
+    .chalkboard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        border-radius: 50px;
+        top: 5%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 65%;
+        width: 85%;
+        background-image: url('photos/chalkboard.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        animation: fadeIn 3s ease-in 0s 1 normal forwards;
+    }
+    .chalk {
+        font-family: Chalk;
+        color: white;
+        font-size: large;
+        font-weight:900;
+        margin-bottom: 30%;
+    }
+}
+
+
+@media only screen and (min-width:1000px) {
+    @keyframes bubble {
+        0% {margin-top: 100%; margin-left:10%;}
+        15% {margin-top: 80%; margin-left: 60%;}
+        30% {margin-top: 60%; margin-left: 10%;}
+        45% {margin-top: 40%; margin-left: 60%;}
+        60% {margin-top: 20%; margin-left: 10%;}
+        75% {margin-top: 10%; margin-left: 36%;}
+        100% {margin-top: 10%; margin-left: 36%;}
+    }
+    .popup{
+        background-image: url('photos/character_montage_opacity0_4.jpeg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        row-gap: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content:space-evenly;
+        position: absolute;
+        height: 33%;
+        width: 28%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        font-size: large;
+        border-radius: 50%;
+        font-family: Spongebob;
+        color:darkviolet;
+        animation: bubble 8s ease-in-out 0s 1 normal forwards;
+    }
+    @keyframes fadeIn {
+        0% {opacity: 0.0;}
+        25% {opacity: 0.25;}
+        50% {opacity: 0.50;}
+        75% {opacity: 0.75;}
+        100% {opacity: 1.0;}
+    }
+    .quizScreen {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        border-radius: 50px;
+        top: 5%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 60%;
+        width: 60%;
+        background-image: url('photos/quizScreen2.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        animation: fadeIn 3s ease-in 0s 1 normal forwards;
+    }
+    
+    .title {
+        margin-left: 7%;
+        font-family: Spongebob;
+        color:blue;
+        font-size: x-large;
+        rotate: 12deg;
+    }
+    .subtitle {
+        padding-left: 10%;
+        font-family: Spongebob;
+        color:red;
+        font-size: large;
+        rotate: 12deg;
+        width: 40%;
+    }
+    .quizForm {
+        margin-right: 10%;
+        font-family: Spongebob;
+        font-size: large;
+        color: green;
+        rotate: 20deg;
+    }
+    .chalkboard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        border-radius: 50px;
+        top: 5%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 65%;
+        width: 85%;
+        background-image: url('photos/chalkboard.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        animation: fadeIn 3s ease-in 0s 1 normal forwards;
+    }
+    .chalk {
+        font-family: Chalk;
+        color: white;
+        font-size: large;
+        font-weight:900;
+        margin-bottom: 30%;
+    }
+}
+
+
+@media only screen and (min-width:1100px) {
+    @keyframes bubble {
+        0% {margin-top: 80%; margin-left:10%;}
+        15% {margin-top: 60%; margin-left: 60%;}
+        30% {margin-top: 50%; margin-left: 10%;}
+        45% {margin-top: 30%; margin-left: 60%;}
+        60% {margin-top: 25%; margin-left: 10%;}
+        75% {margin-top: 10%; margin-left: 40%;}
+        100% {margin-top: 10%; margin-left: 40%;}
+    }
+    .popup{
+        background-image: url('photos/character_montage_opacity0_4.jpeg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        row-gap: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content:space-evenly;
+        position: absolute;
+        height: 31%;
+        width: 25%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        font-size: large;
+        border-radius: 50%;
+        font-family: Spongebob;
+        color:darkviolet;
+        animation: bubble 8s ease-in-out 0s 1 normal forwards;
+    }
+    @keyframes fadeIn {
+        0% {opacity: 0.0;}
+        25% {opacity: 0.25;}
+        50% {opacity: 0.50;}
+        75% {opacity: 0.75;}
+        100% {opacity: 1.0;}
+    }
+    .quizScreen {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        border-radius: 50px;
+        padding-bottom: 5%;
+        top: 5%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 60%;
+        width: 60%;
+        background-image: url('photos/quizScreen2.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        animation: fadeIn 3s ease-in 0s 1 normal forwards;
+    }
+    
+    .title {
+        margin-left: 7%;
+        font-family: Spongebob;
+        color:blue;
+        font-size: x-large;
+        rotate: 12deg;
+    }
+    .subtitle {
+        padding-left: 10%;
+        font-family: Spongebob;
+        color:red;
+        font-size: x-large;
+        rotate: 12deg;
+        width: 40%;
+    }
+    .quizForm {
+        margin-right: 10%;
+        font-family: Spongebob;
+        color: green;
+        rotate: 20deg;
+    }
+    .chalkboard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        border-radius: 50px;
+        top: 5%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 65%;
+        width: 90%;
+        background-image: url('photos/chalkboard.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        animation: fadeIn 3s ease-in 0s 1 normal forwards;
+    }
+    .chalk {
+        font-family: Chalk;
+        color: white;
+        font-size: x-large;
+        font-weight:900;
+        margin-bottom: 25%;
+    }
+}
+
+
+@media only screen and (min-width:1200px) {
+    @keyframes bubble {
+        0% {margin-top: 70%; margin-left:10%;}
+        15% {margin-top: 45%; margin-left: 60%;}
+        30% {margin-top: 30%; margin-left: 10%;}
+        45% {margin-top: 20%; margin-left: 60%;}
+        60% {margin-top: 15%; margin-left: 10%;}
+        75% {margin-top: 10%; margin-left: 35%;}
+        100% {margin-top: 10%; margin-left: 35%;}
+    }
+    .popup{
+        background-image: url('photos/character_montage_opacity0_4.jpeg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        row-gap: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content:space-evenly;
+        position: absolute;
+        height: 31%;
+        width: 23%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        font-size: large;
+        border-radius: 50%;
+        font-family: Spongebob;
+        color:darkviolet;
+        animation: bubble 8s ease-in-out 0s 1 normal forwards;
+    }
+    @keyframes fadeIn {
+        0% {opacity: 0.0;}
+        25% {opacity: 0.25;}
+        50% {opacity: 0.50;}
+        75% {opacity: 0.75;}
+        100% {opacity: 1.0;}
+    }
+    .quizScreen {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        border-radius: 50px;
+        padding-bottom: 5%;
+        top: 5%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 60%;
+        width: 60%;
+        background-image: url('photos/quizScreen2.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        animation: fadeIn 3s ease-in 0s 1 normal forwards;
+    }
+    
+    .title {
+        margin-left: 7%;
+        font-family: Spongebob;
+        color:blue;
+        font-size: x-large;
+        rotate: 12deg;
+    }
+    .subtitle {
+        padding-left: 10%;
+        font-family: Spongebob;
+        color:red;
+        font-size: x-large;
+        rotate: 12deg;
+        width: 40%;
+    }
+    .quizForm {
+        margin-right: 10%;
+        font-family: Spongebob;
+        color: green;
+        rotate: 20deg;
+    }
+    .chalkboard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        border-radius: 50px;
+        top: 5%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 65%;
+        width: 90%;
+        background-image: url('photos/chalkboard.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        animation: fadeIn 3s ease-in 0s 1 normal forwards;
+    }
+    .chalk {
+        font-family: Chalk;
+        color: white;
+        font-size: x-large;
+        font-weight:900;
+        margin-bottom: 25%;
+    }
+}
+
+@media only screen and (min-width:1300px) {
+    @keyframes bubble {
+        0% {margin-top: 60%; margin-left:10%;}
+        15% {margin-top: 50%; margin-left: 60%;}
+        30% {margin-top: 40%; margin-left: 10%;}
+        45% {margin-top: 30%; margin-left: 60%;}
+        60% {margin-top: 15%; margin-left: 10%;}
+        75% {margin-top: 10%; margin-left: 40%;}
+        100% {margin-top: 10%; margin-left: 40%;}
+    }
+    .popup{
+        background-image: url('photos/character_montage_opacity0_4.jpeg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        row-gap: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content:space-evenly;
+        position: absolute;
+        height: 30%;
+        width: 20%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        font-size: large;
+        border-radius: 50%;
+        font-family: Spongebob;
+        color:darkviolet;
+        animation: bubble 8s ease-in-out 0s 1 normal forwards;
+    }
+    @keyframes fadeIn {
+        0% {opacity: 0.0;}
+        25% {opacity: 0.25;}
+        50% {opacity: 0.50;}
+        75% {opacity: 0.75;}
+        100% {opacity: 1.0;}
+    }
+    .quizScreen {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        border-radius: 50px;
+        top: 5%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 60%;
+        width: 60%;
+        background-image: url('photos/quizScreen2.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        animation: fadeIn 3s ease-in 0s 1 normal forwards;
+    }
+    
+    .title {
+        margin-left: 7%;
+        font-family: Spongebob;
+        color:blue;
+        font-size: x-large;
+        rotate: 12deg;
+    }
+    .subtitle {
+        padding-left: 10%;
+        font-family: Spongebob;
+        color:red;
+        font-size: x-large;
+        rotate: 12deg;
+        width: 40%;
+    }
+    .quizForm {
+        margin-right: 10%;
+        font-family: Spongebob;
+        color: green;
+        rotate: 20deg;
+    }
+}
+
+@media only screen and (min-width:1400px) {
+    @keyframes bubble {
+        0% {margin-top: 60%; margin-left:10%;}
+        15% {margin-top: 40%; margin-left: 60%;}
+        30% {margin-top: 30%; margin-left: 10%;}
+        45% {margin-top: 20%; margin-left: 60%;}
+        60% {margin-top: 15%; margin-left: 10%;}
+        75% {margin-top: 10%; margin-left: 42%;}
+        100% {margin-top: 10%; margin-left: 42%;}
+    }
+    .popup{
+        background-image: url('photos/character_montage_opacity0_4.jpeg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        row-gap: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content:space-evenly;
+        position: absolute;
+        height: 30%;
+        width: 18%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        font-size: large;
+        border-radius: 50%;
+        font-family: Spongebob;
+        color:darkviolet;
+        animation: bubble 8s ease-in-out 0s 1 normal forwards;
+    }
+    @keyframes fadeIn {
+        0% {opacity: 0.0;}
+        25% {opacity: 0.25;}
+        50% {opacity: 0.50;}
+        75% {opacity: 0.75;}
+        100% {opacity: 1.0;}
+    }
+    .quizScreen {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        border-radius: 50px;
+        top: 5%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 60%;
+        width: 60%;
+        background-image: url('photos/quizScreen2.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        animation: fadeIn 3s ease-in 0s 1 normal forwards;
+    }
+    
+    .title {
+        margin-left: 7%;
+        font-family: Spongebob;
+        color:blue;
+        font-size: x-large;
+        rotate: 12deg;
+    }
+    .subtitle {
+        padding-left: 10%;
+        font-family: Spongebob;
+        color:red;
+        font-size: x-large;
+        rotate: 12deg;
+        width: 40%;
+    }
+    .quizForm {
+        margin-right: 10%;
+        font-family: Spongebob;
+        color: green;
+        rotate: 20deg;
+    }
+}
+
+@media only screen and (min-width:1500px) {
+    @keyframes bubble {
+        0% {margin-top: 50%; margin-left:10%;}
+        15% {margin-top: 40%; margin-left: 60%;}
+        30% {margin-top: 30%; margin-left: 10%;}
+        45% {margin-top: 20%; margin-left: 60%;}
+        60% {margin-top: 15%; margin-left: 10%;}
+        75% {margin-top: 10%; margin-left: 41%;}
+        100% {margin-top: 10%; margin-left: 41%;}
+    }
+    .popup{
+        background-image: url('photos/character_montage_opacity0_4.jpeg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        row-gap: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content:space-evenly;
+        position: absolute;
+        height: 30%;
+        width: 18%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        font-size: large;
+        border-radius: 50%;
+        font-family: Spongebob;
+        color:darkviolet;
+        animation: bubble 8s ease-in-out 0s 1 normal forwards;
+    }
+    @keyframes fadeIn {
+        0% {opacity: 0.0;}
+        25% {opacity: 0.25;}
+        50% {opacity: 0.50;}
+        75% {opacity: 0.75;}
+        100% {opacity: 1.0;}
+    }
+    .quizScreen {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        border-radius: 50px;
+        top: 5%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 60%;
+        width: 60%;
+        background-image: url('photos/quizScreen2.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        animation: fadeIn 3s ease-in 0s 1 normal forwards;
+    }
+    
+    .title {
+        margin-left: 7%;
+        font-family: Spongebob;
+        color:blue;
+        font-size: x-large;
+        rotate: 12deg;
+    }
+    .subtitle {
+        padding-left: 12%;
+        font-family: Spongebob;
+        color:red;
+        font-size: x-large;
+        rotate: 12deg;
+        width: 40%;
+    }
+    .quizForm {
+        margin-right: 10%;
+        font-family: Spongebob;
+        color: green;
+        rotate: 20deg;
+    }
+}
+
+
+@media only screen and (min-width:1600px) {
+    @keyframes bubble {
+        0% {margin-top: 50%; margin-left:10%;}
+        15% {margin-top: 40%; margin-left: 60%;}
+        30% {margin-top: 30%; margin-left: 10%;}
+        45% {margin-top: 20%; margin-left: 60%;}
+        60% {margin-top: 15%; margin-left: 10%;}
+        75% {margin-top: 10%; margin-left: 40%;}
+        100% {margin-top: 10%; margin-left: 40%;}
+    }
+    .popup{
+        background-image: url('photos/character_montage_opacity0_4.jpeg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        row-gap: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content:space-evenly;
+        position: absolute;
+        height: 30%;
+        width: 17%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        font-size: large;
+        border-radius: 50%;
+        font-family: Spongebob;
+        color:darkviolet;
+        animation: bubble 8s ease-in-out 0s 1 normal forwards;
+    }
+    @keyframes fadeIn {
+        0% {opacity: 0.0;}
+        25% {opacity: 0.25;}
+        50% {opacity: 0.50;}
+        75% {opacity: 0.75;}
+        100% {opacity: 1.0;}
+    }
+    
+    .quizScreen {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        border-radius: 50px;
+        top: 5%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 60%;
+        width: 60%;
+        background-image: url('photos/quizScreen2.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        animation: fadeIn 3s ease-in 0s 1 normal forwards;
+    }
+    
+    .title {
+        margin-left: 7%;
+        font-family: Spongebob;
+        color:blue;
+        font-size: x-large;
+        rotate: 12deg;
+    }
+    .subtitle {
+        padding-left: 10%;
+        font-family: Spongebob;
+        color:red;
+        font-size: x-large;
+        rotate: 12deg;
+        width: 40%;
+    }
+    .quizForm {
+        margin-right: 10%;
+        font-family: Spongebob;
+        color: green;
+        rotate: 20deg;
+    }
+   
+}
+
+
+
+@media only screen  and (min-width:1700px) {
+    @keyframes bubble {
+        0% {margin-top: 50%; margin-left:10%;}
+        15% {margin-top: 40%; margin-left: 60%;}
+        30% {margin-top: 30%; margin-left: 10%;}
+        45% {margin-top: 20%; margin-left: 60%;}
+        60% {margin-top: 15%; margin-left: 10%;}
+        75% {margin-top: 10%; margin-left: 40%;}
+        100% {margin-top: 10%; margin-left: 40%;}
+    }
+    .popup{
+        background-image: url('photos/character_montage_opacity0_4.jpeg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        row-gap: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content:space-evenly;
+        position: absolute;
+        height: 30%;
+        width: 16%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        font-size: large;
+        border-radius: 50%;
+        font-family: Spongebob;
+        color:darkviolet;
+        animation: bubble 8s ease-in-out 0s 1 normal forwards;
+    }
+    @keyframes fadeIn {
+        0% {opacity: 0.0;}
+        25% {opacity: 0.25;}
+        50% {opacity: 0.50;}
+        75% {opacity: 0.75;}
+        100% {opacity: 1.0;}
+    }
+    
+    .quizScreen {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        border-radius: 50px;
+        top: 5%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 60%;
+        width: 60%;
+        background-image: url('photos/quizScreen2.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        animation: fadeIn 3s ease-in 0s 1 normal forwards;
+    }
+    
+    .title {
+        margin-left: 7%;
+        font-family: Spongebob;
+        color:blue;
+        font-size: x-large;
+        rotate: 12deg;
+    }
+    .subtitle {
+        padding-left: 10%;
+        font-family: Spongebob;
+        color:red;
+        font-size: x-large;
+        rotate: 12deg;
+        width: 40%;
+    }
+    .quizForm {
+        margin-right: 10%;
+        font-family: Spongebob;
+        color: green;
+        rotate: 20deg;
+    }
+}
+
+@media only screen and (min-width:1800px) {
+    @keyframes bubble {
+        0% {margin-top: 50%; margin-left:10%;}
+        15% {margin-top: 40%; margin-left: 60%;}
+        30% {margin-top: 30%; margin-left: 10%;}
+        45% {margin-top: 20%; margin-left: 60%;}
+        60% {margin-top: 15%; margin-left: 10%;}
+        75% {margin-top: 10%; margin-left: 40%;}
+        100% {margin-top: 10%; margin-left: 40%;}
+    }
+    .popup{
+        background-image: url('photos/character_montage_opacity0_4.jpeg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        row-gap: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content:space-evenly;
+        position: absolute;
+        height: 30%;
+        width: 16%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        font-size: large;
+        border-radius: 50%;
+        font-family: Spongebob;
+        color:darkviolet;
+        animation: bubble 8s ease-in-out 0s 1 normal forwards;
+    }
+    @keyframes fadeIn {
+        0% {opacity: 0.0;}
+        25% {opacity: 0.25;}
+        50% {opacity: 0.50;}
+        75% {opacity: 0.75;}
+        100% {opacity: 1.0;}
+    }
+    
+    .quizScreen {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        border-radius: 50px;
+        top: 5%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 60%;
+        width: 60%;
+        background-image: url('photos/quizScreen2.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        animation: fadeIn 3s ease-in 0s 1 normal forwards;
+    }
+    
+    .title {
+        margin-left: 7%;
+        font-family: Spongebob;
+        color:blue;
+        font-size: x-large;
+        rotate: 12deg;
+    }
+    .subtitle {
+        padding-left: 10%;
+        font-family: Spongebob;
+        color:red;
+        font-size: x-large;
+        rotate: 12deg;
+        width: 40%;
+    }
+    .quizForm {
+        margin-right: 10%;
+        font-family: Spongebob;
+        color: green;
+        rotate: 20deg;
+    }
+}
+
+@media only screen and (min-width:1900px) {
+    @keyframes bubble {
+        0% {margin-top: 50%; margin-left:10%;}
+        15% {margin-top: 40%; margin-left: 60%;}
+        30% {margin-top: 30%; margin-left: 10%;}
+        45% {margin-top: 20%; margin-left: 60%;}
+        60% {margin-top: 15%; margin-left: 10%;}
+        75% {margin-top: 10%; margin-left: 40%;}
+        100% {margin-top: 10%; margin-left: 40%;}
+    }
+    .popup{
+        background-image: url('photos/character_montage_opacity0_4.jpeg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        row-gap: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content:space-evenly;
+        position: absolute;
+        height: 30%;
+        width: 14%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        font-size: large;
+        border-radius: 50%;
+        font-family: Spongebob;
+        color:darkviolet;
+        animation: bubble 8s ease-in-out 0s 1 normal forwards;
+    }
+    @keyframes fadeIn {
+        0% {opacity: 0.0;}
+        25% {opacity: 0.25;}
+        50% {opacity: 0.50;}
+        75% {opacity: 0.75;}
+        100% {opacity: 1.0;}
+    }
+    
+    .quizScreen {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        border-radius: 50px;
+        top: 5%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 60%;
+        width: 60%;
+        background-image: url('photos/quizScreen2.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        animation: fadeIn 3s ease-in 0s 1 normal forwards;
+    }
+    
+    .title {
+        margin-left: 7%;
+        font-family: Spongebob;
+        color:blue;
+        font-size: x-large;
+        rotate: 12deg;
+    }
+    .subtitle {
+        padding-left: 10%;
+        font-family: Spongebob;
+        color:red;
+        font-size: x-large;
+        rotate: 12deg;
+        width: 40%;
+    }
+    .quizForm {
+        margin-right: 10%;
+        font-family: Spongebob;
+        color: green;
+        rotate: 20deg;
+    }
+}
+
+@media only screen and (min-width:2000px) {
+    @keyframes bubble {
+        0% {margin-top: 45%; margin-left:10%;}
+        15% {margin-top: 40%; margin-left: 60%;}
+        30% {margin-top: 30%; margin-left: 10%;}
+        45% {margin-top: 20%; margin-left: 60%;}
+        60% {margin-top: 15%; margin-left: 10%;}
+        75% {margin-top: 10%; margin-left: 38%;}
+        100% {margin-top: 10%; margin-left: 38%;}
+    }
+    .popup{
+        background-image: url('photos/character_montage_opacity0_4.jpeg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        row-gap: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content:space-evenly;
+        position: absolute;
+        height: 30%;
+        width: 14%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        font-size: large;
+        border-radius: 50%;
+        font-family: Spongebob;
+        color:darkviolet;
+        animation: bubble 8s ease-in-out 0s 1 normal forwards;
+    }
+    @keyframes fadeIn {
+        0% {opacity: 0.0;}
+        25% {opacity: 0.25;}
+        50% {opacity: 0.50;}
+        75% {opacity: 0.75;}
+        100% {opacity: 1.0;}
+    }
+    
+    .quizScreen {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        border-radius: 50px;
+        top: 5%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 60%;
+        width: 60%;
+        background-image: url('photos/quizScreen2.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        animation: fadeIn 3s ease-in 0s 1 normal forwards;
+    }
+    
+    .title {
+        margin-left: 7%;
+        font-family: Spongebob;
+        color:blue;
+        font-size: x-large;
+        rotate: 12deg;
+    }
+    .subtitle {
+        padding-left: 10%;
+        font-family: Spongebob;
+        color:red;
+        font-size: x-large;
+        rotate: 12deg;
+        width: 40%;
+    }
+    .quizForm {
+        margin-right: 10%;
+        font-family: Spongebob;
+        color: green;
+        rotate: 20deg;
+    }
+}
