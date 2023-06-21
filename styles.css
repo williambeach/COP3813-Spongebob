@@ -1121,7 +1121,7 @@ li {
         right: 0;
         margin: auto;
         height: 65%;
-        width: 85%;
+        width: 80%;
         background-image: url('photos/chalkboard.png');
         background-position: center;
         background-repeat: no-repeat;
@@ -1233,7 +1233,7 @@ li {
         right: 0;
         margin: auto;
         height: 65%;
-        width: 90%;
+        width: 70%;
         background-image: url('photos/chalkboard.png');
         background-position: center;
         background-repeat: no-repeat;
@@ -1245,7 +1245,7 @@ li {
         color: white;
         font-size: x-large;
         font-weight:900;
-        margin-bottom: 25%;
+        margin-bottom: 30%;
     }
 }
 
@@ -1442,6 +1442,38 @@ li {
         color: green;
         rotate: 20deg;
     }
+    .quizForm {
+        margin-right: 10%;
+        font-family: Spongebob;
+        color: green;
+        rotate: 20deg;
+    }
+    .chalkboard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        border-radius: 50px;
+        top: 5%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 65%;
+        width: 70%;
+        background-image: url('photos/chalkboard.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        animation: fadeIn 3s ease-in 0s 1 normal forwards;
+    }
+    .chalk {
+        font-family: Chalk;
+        color: white;
+        font-size: x-large;
+        font-weight:900;
+        margin-bottom: 30%;
+    }
 }
 
 @media only screen and (min-width:1400px) {
@@ -1525,6 +1557,38 @@ li {
         color: green;
         rotate: 20deg;
     }
+    .quizForm {
+        margin-right: 10%;
+        font-family: Spongebob;
+        color: green;
+        rotate: 20deg;
+    }
+    .chalkboard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        border-radius: 50px;
+        top: 5%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 65%;
+        width: 70%;
+        background-image: url('photos/chalkboard.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        animation: fadeIn 3s ease-in 0s 1 normal forwards;
+    }
+    .chalk {
+        font-family: Chalk;
+        color: white;
+        font-size: x-large;
+        font-weight:900;
+        margin-bottom: 30%;
+    }
 }
 
 @media only screen and (min-width:1500px) {
@@ -1607,6 +1671,38 @@ li {
         font-family: Spongebob;
         color: green;
         rotate: 20deg;
+    }
+    .quizForm {
+        margin-right: 10%;
+        font-family: Spongebob;
+        color: green;
+        rotate: 20deg;
+    }
+    .chalkboard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        border-radius: 50px;
+        top: 5%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 65%;
+        width: 70%;
+        background-image: url('photos/chalkboard.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        animation: fadeIn 3s ease-in 0s 1 normal forwards;
+    }
+    .chalk {
+        font-family: Chalk;
+        color: white;
+        font-size: x-large;
+        font-weight:900;
+        margin-bottom: 25%;
     }
 }
 

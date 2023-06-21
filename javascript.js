@@ -19,7 +19,7 @@ window.addEventListener("DOMContentLoaded", ()=>{
         screen.appendChild(quizScreen);
         loadQuestion(quizForm, quizScreen);
         
-        //document.getElementById("sound1").play();
+        document.getElementById("sound2").play();
     })
 
     popupWindowButton.classList.add("enterButton");
@@ -210,6 +210,8 @@ function nextButton(){
 }
 
 function submitResults(){ //what happens when i click submit button
+    document.getElementById("sound2").pause();
+    document.getElementById("sound3").play();
     let characterSet = {
         "10%":"Squilliam Fancyson", 
         "20%":"Man Ray",
